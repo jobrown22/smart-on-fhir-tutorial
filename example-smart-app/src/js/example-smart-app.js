@@ -48,6 +48,7 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
+          p.weight = '123123';
 
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
@@ -83,6 +84,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+      weight: {value: ''},
     };
   }
 
@@ -126,6 +128,7 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
+    $('#weight').html(p.weight);
   };
 
 })(window);
